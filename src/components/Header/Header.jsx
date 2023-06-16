@@ -10,7 +10,7 @@ const Header = () => {
                 <a href="/shop">Shop</a><a href="/review">Review Order</a><a href="/manage">Manage Inventory</a>
             </nav>
         </div>
-    );
-};
+    )
+}
 
 export default Header

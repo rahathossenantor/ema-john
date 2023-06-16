@@ -1,0 +1,25 @@
+.product-item {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.product-image img {
+    width: 200px;
+    padding: 8px;
+    display: inline-block;
+}
+.product-info {
+    padding: 8px;
+}
+.product-info h4 {
+    color: blue;
+    font-weight: 400;
+}
+.product-info button {
+    width: 140px;
+    height: 25px;
+    padding-top: 3px;
+    background-color: goldenrod;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -25,9 +25,7 @@ const updateDb = cart => {
 
 const removeFromDb = id => {
   const exists = getDb();
-  if (!exists) {
-
-  }
+  if (!exists) {1+1}
   else {
     const shopping_cart = JSON.parse(exists);
     delete shopping_cart[id];
@@ -44,4 +42,4 @@ const clearTheCart = () => {
   localStorage.removeItem('shopping_cart');
 }
 
-export { addToDb, removeFromDb as deleteFromDb, clearTheCart, getStoredCart }
+export {addToDb, removeFromDb as deleteFromDb, clearTheCart, getStoredCart}

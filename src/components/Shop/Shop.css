@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    .products {
+        width: 70%;
+        margin-left: 55px;
+        padding: 0 10px;
+        border-right: 1px solid lightgray;
+    }
+    .cart {
+        padding: 0 10px;
+        width: 30%;
+        text-align: center;
+    }
+}

@@ -1,4 +1,4 @@
-[
+const fakeData = [
     {
         "key": "B002RL8IYK",
         "category": "laptop",
@@ -2176,3 +2176,5 @@
         "shipping": 7.99
     }
 ]
+
+export default fakeData
