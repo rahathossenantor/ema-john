@@ -3,14 +3,19 @@ import "./Shop.css"
 import fakeData from "../../fakeData"
 import {useState} from "react"
 import Products from "../Products/Products"
+import Cart from "../Cart/Cart"
+
+React
 
 
 const Shop = () => {
     const products = fakeData.slice(0,10)
-
+    
     const [items, setItems] = useState(products)
     const [cart, setCart] = useState([])
-
+    
+    setItems
+    
     // Handling add to cart button
     const addToCart = (product) => {
         const cartItems = [...cart, product]
@@ -26,8 +31,7 @@ const Shop = () => {
             </div>
 
             <div className="cart">
-                <h3>Order Summary</h3>
-                <h5>Total items in cart: {cart.length}</h5>
+                <Cart cart={cart}></Cart>
             </div>
         </div>
     )
