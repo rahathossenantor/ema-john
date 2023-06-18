@@ -1,12 +1,12 @@
 import React from "react"
 import "./Shop.css"
-import fakeData from "../../fakeData/products.js"
+import fakeData from "../../fakeData"
 import {useState} from "react"
 import Products from "../Products/Products"
 
 
 const Shop = () => {
-    const products = fakeData.slice(10,20)
+    const products = fakeData.slice(0,10)
 
     const [items, setItems] = useState(products)
     const [cart, setCart] = useState([])
