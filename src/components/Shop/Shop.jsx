@@ -5,16 +5,12 @@ import {useState} from "react"
 import Products from "../Products/Products"
 import Cart from "../Cart/Cart"
 
-React
-
 
 const Shop = () => {
     const products = fakeData.slice(0,10)
     
     const [items, setItems] = useState(products)
     const [cart, setCart] = useState([])
-    
-    setItems
     
     // Handling add to cart button
     const addToCart = (product) => {
@@ -26,7 +22,7 @@ const Shop = () => {
         <div className="container">
             <div className="products">
                 {items.map(product => {
-                    return <Products key={product.key} addToCart={addToCart} productItem={product}></Products>
+                    return <Products key={product.key} addToCart={addToCart} cartButton={true} productItem={product}></Products>
                 })}
             </div>
 

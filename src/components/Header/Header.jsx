@@ -1,15 +1,15 @@
-// import React from "react"
+import React from "react"
 import logo from "../../images/logo.png"
 import "./Header.css"
 
 const Header = () => {
     return (
-        <div className="header">
+        <header className="header">
             <img src={logo} alt="ema-john" />
             <nav>
-                <a href="/shop">Shop</a><a href="/review">Review Order</a><a href="/manage">Manage Inventory</a>
+                <a href="/shop">Shop</a><a href="/review">Review Order</a><a href="/inventory">Manage Inventory</a>
             </nav>
-        </div>
+        </header>
     )
 }
 
